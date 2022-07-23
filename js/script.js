@@ -93,7 +93,8 @@ axios
     })
 
 window.onload = function() {
-    const resultHostElems = document.querySelectorAll('.result__host');
+    setTimeout(function() {
+		const resultHostElems = document.querySelectorAll('.result__host');
     const mouseHoverShow = () => {
         for (let item of resultHostElems) {
     
@@ -160,8 +161,8 @@ window.onload = function() {
             }
         })
     }
+	}, 1000);
 };
-
 
 
 
