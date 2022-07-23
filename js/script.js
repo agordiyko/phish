@@ -39,23 +39,23 @@ const createTemplate = data => {
                                     </svg>
                                 </span>
                                 <div class="result__inform tabs__wrapper">
-                                    <div id="tab-${data.id}"
+                                    <div id="tab-${data.id}-1"
                                         class="tabs-content__item tabs-content__item--active result__hold ">
                                         <a  href="http://${data.domain}" class="result__image">
                                             <img src="${data.photo_1}"
                                                 alt="${data.domain}">
                                         </a>
                                     </div>
-                                    <div id="tab-${data.id + 1}" class="tabs-content__item result__hold">
+                                    <div id="tab-${data.id}-2" class="tabs-content__item result__hold">
                                         <a href="https://${data.domain}" class="result__image">
                                             <img src="${data.photo_2}"
                                                 alt="${data.domain}">
                                         </a>
                                     </div>
                                     <div class="result-triggers">
-                                        <a href="#tab-${data.id}"
+                                        <a href="#tab-${data.id}-1"
                                             class="result-triggers__item result__link result-triggers__item--active">HTTP</a>
-                                        <a href="#tab-${data.id + 1}" class="result-triggers__item result__link">HTTPS</a>
+                                        <a href="#tab-${data.id}-2" class="result-triggers__item result__link">HTTPS</a>
                                     </div>
                                 </div>
                             </div>
@@ -78,7 +78,8 @@ const createTemplate = data => {
 }
 
 axios
-    .get('/phish/data/info.json')
+    .get('../data/info.json')
+    // .get('/phish/data/info.json')
     .then(response => {
         data = response.data
         if (data) {
@@ -161,6 +162,7 @@ function handleAccordion() {
         })
     }
 };
+
 
 
 
