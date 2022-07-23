@@ -1,0 +1,47 @@
+[
+    {
+        "id": 11,
+        "dns_a": [
+            "185.50.25.15"
+        ],
+        "dns_mx": [
+            "mx1.beget.com"
+        ],
+        "dns_ns": [
+            "ns1.beget.com"
+        ],
+        "domain": "investlift.ru",
+        "fuzzer": "*original",
+        "photo_1": "https://images.unsplash.com/photo-1587064903410-d9e72d4747e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+        "photo_2": "https://images.unsplash.com/photo-1657444984080-5c08464bde8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 21,
+        "dns_a": [
+            "162.55.84.100"
+        ],
+        "dns_ns": [
+            "ns1.digitalocean.com"
+        ],
+        "domain": "investlift.com",
+        "fuzzer": "tld-swap",
+        "photo_1": "https://images.unsplash.com/photo-1657897989117-607b671d73f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80",
+        "photo_2": "https://images.unsplash.com/photo-1657925426569-ad97ff77fe4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+        "id": 31,
+        "dns_a": [
+            "85.128.173.11"
+        ],
+        "dns_mx": [
+            "investlift.pl"
+        ],
+        "dns_ns": [
+            "ns1.nazwa.pl"
+        ],
+        "domain": "investlift.pl",
+        "fuzzer": "tld-swap",
+        "photo_1": "https://images.unsplash.com/photo-1657483517638-de0853da3d9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        "photo_2": "https://images.unsplash.com/photo-1657958352926-4f5508dcfc5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    }
+]
