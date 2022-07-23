@@ -78,7 +78,7 @@ const createTemplate = data => {
 }
 
 axios
-    .get('/data/info.json')
+    .get('/phish/data/info.json')
     .then(response => {
         data = response.data
         if (data) {
