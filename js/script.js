@@ -41,16 +41,16 @@ const createTemplate = data => {
                                 <div class="result__inform tabs__wrapper">
                                     <div id="tab-${data.id}"
                                         class="tabs-content__item tabs-content__item--active result__hold ">
-                                        <div class="result__image">
+                                        <a  href="${data.domain}" class="result__image">
                                             <img src="${data.photo_1}"
                                                 alt="${data.domain}">
-                                        </div>
+                                        </a>
                                     </div>
                                     <div id="tab-${data.id + 1}" class="tabs-content__item result__hold">
-                                        <div class="result__image">
+                                        <a href="${data.domain}" class="result__image">
                                             <img src="${data.photo_2}"
                                                 alt="${data.domain}">
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="result-triggers">
                                         <a href="#tab-${data.id}"
@@ -78,7 +78,8 @@ const createTemplate = data => {
 }
 
 axios
-    .get('/phish/data/info.json')
+    .get('../data/info.json')
+    // .get('/phish/data/info.json')
     .then(response => {
         data = response.data
         if (data) {
