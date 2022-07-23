@@ -86,16 +86,16 @@ axios
                 accordionWrapper.innerHTML += createTemplate(item);
             })
         }
+        handleAccordion();
         console.log("response", data);
     })
     .catch(error => {
         console.log("error", error);
     })
 
-window.onload = function() {
-    setTimeout(function() {
-		const resultHostElems = document.querySelectorAll('.result__host');
-    const mouseHoverShow = () => {
+function handleAccordion() {
+        const resultHostElems = document.querySelectorAll('.result__host');
+        const mouseHoverShow = () => {
         for (let item of resultHostElems) {
     
             const wrap = item.closest('.result__wrap');
@@ -143,7 +143,6 @@ window.onload = function() {
     
     const accordionButtons = document.querySelectorAll('.accordion-button');
     for (let item of accordionButtons) {
-    
         item.addEventListener('click', (e) => {
             const accordion = item.closest('.accordion');
             const accordionCollapse = accordion.querySelectorAll('.accordion-collapse');
@@ -161,7 +160,6 @@ window.onload = function() {
             }
         })
     }
-	}, 100);
 };
 
 
