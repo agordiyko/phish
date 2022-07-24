@@ -41,21 +41,21 @@ const createTemplate = data => {
                                 <div class="result__inform tabs__wrapper">
                                     <div id="tab-${data.id}-1"
                                         class="tabs-content__item tabs-content__item--active result__hold ">
-                                        <a  href="http://${data.domain}" class="result__image">
+                                        <a  href="https://${data.domain}" class="result__image">
                                             <img src="${data.photo_1}"
                                                 alt="${data.domain}">
                                         </a>
                                     </div>
                                     <div id="tab-${data.id}-2" class="tabs-content__item result__hold">
-                                        <a href="https://${data.domain}" class="result__image">
+                                        <a href="http://${data.domain}" class="result__image">
                                             <img src="${data.photo_2}"
                                                 alt="${data.domain}">
                                         </a>
                                     </div>
                                     <div class="result-triggers">
                                         <a href="#tab-${data.id}-1"
-                                            class="result-triggers__item result__link result-triggers__item--active">HTTP</a>
-                                        <a href="#tab-${data.id}-2" class="result-triggers__item result__link">HTTPS</a>
+                                            class="result-triggers__item result__link result-triggers__item--active">HTTPS</a>
+                                        <a href="#tab-${data.id}-2" class="result-triggers__item result__link">HTTP</a>
                                     </div>
                                 </div>
                             </div>
